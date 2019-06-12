@@ -153,6 +153,7 @@ function searchProjects(string $search, ?int $categoryId) : array {
             DATE_FORMAT(project.date_start, '%d/%m/%Y') AS date_start_format,
             category.label AS category,
             COUNT(phm.member_id) AS nb_members
+            MATCH(project.title, project.description) AGAINST ('$search') AS score
         FROM project
         INNER JOIN category ON project.category_id = category.id
         LEFT JOIN project_has_member AS phm ON project.id = phm.project_id
