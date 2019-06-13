@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Login</title>
-
+    ​
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+    ​
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -17,7 +17,7 @@
             -ms-user-select: none;
             user-select: none;
         }
-
+        ​
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -28,12 +28,12 @@
     <link href="css/signin.css" rel="stylesheet">
 </head>
 <body class="text-center">
-<form  method="post" action="index.php" class="form-signin">
+<form method="post" action="index.php" class="form-signin">
     <h1 class="h3 mb-3 font-weight-normal">Login</h1>
     <label for="inputEmail" class="sr-only">Email</label>
     <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
     <label for="inputPassword" class="sr-only">Mot de passe</label>
-    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Mot de passe" required>
+    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Mot de passe" required>
     <div class="checkbox mb-3">
         <label>
             <input type="checkbox" value="remember-me"> Se souvenir de moi
