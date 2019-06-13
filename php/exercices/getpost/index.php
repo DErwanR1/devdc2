@@ -27,14 +27,12 @@ $countries = ["France", "Espagne", "Italie"];
     <input type="checkbox" id="tennis" name="sport[]" value="tennis">
     <label for="tennis">Tennis</label>
 
-    <div>
-        <input type="color" id="checkbox" name="sport">
+    <input type="color" name="color">
 
-    </div>
     <input type="submit">
 </form>
 
 <form action="uploadfile.php" method="post" enctype="multipart/form-data">
-    <input type="type" name="image" accept="image/*">
+    <input type="file" name="image" accept="image/*">
     <input type="submit">
 </form>
