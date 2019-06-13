@@ -5,8 +5,17 @@ body {
 .navbar-nav {
     flex-direction: row;
 }
+
 .navbar-nav li {
     margin-left: 1em;
+}
+
+table .actions {
+    width: 300px;
+}
+
+table .img-thumbnail {
+    width: 150px;
 }
 
 /*

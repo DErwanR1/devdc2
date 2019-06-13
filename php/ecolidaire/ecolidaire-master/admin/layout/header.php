@@ -39,6 +39,12 @@ require_once __DIR__ . "/../security.php";
         <li class="nav-item text-nowrap">
             <a class="nav-link" href="<?= SITE_ADMIN; ?>logout.php">Déconnexion</a>
         </li>
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="<?= SITE_URL; ?>">
+                <i class="fa fa-external-link"></i>
+                Front
+            </a>
+        </li>
     </ul>
 </nav>
 
@@ -51,3 +57,15 @@ require_once __DIR__ . "/../security.php";
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+            <?php if (isset($_SESSION["flash"])): ?>
+                <?php foreach ($_SESSION["flash"] as $error) : ?>
+                    <div class="alert alert-<?= $error["type"]; ?> alert-dismissible fade show">
+                        <?= $error["message"]; ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <?php endforeach; ?>
+                <?php unset($_SESSION["flash"]); ?>
+            <?php endif; ?>
