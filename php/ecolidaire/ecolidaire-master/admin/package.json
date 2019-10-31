@@ -13,7 +13,7 @@
     "datatables.net-bs4": "^1.10.19",
     "font-awesome": "^4.7.0",
     "install": "^0.12.2",
-    "jquery": "^1.9.1",
+    "jquery": "^3.4.0",
     "popper.js": "^1.15.0",
     "select2": "^4.0.7",
     "sudo": "^1.0.3",
